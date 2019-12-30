@@ -11,7 +11,25 @@ const photos: string[] = [
   `${unsplashed}?food`,
   `${unsplashed}?club`,
   `${unsplashed}?dance`,
-  `${unsplashed}?school`
+  `${unsplashed}?sun`,
+  `${unsplashed}?stars`,
+  `${unsplashed}?friends`,
+  `${unsplashed}?bank`,
+  `${unsplashed}?laptop`,
+  `${unsplashed}?book`,
+  `${unsplashed}?table`,
+  `${unsplashed}?mountain`,
+  `${unsplashed}?school`,
+  `${unsplashed}?watch`,
+  `${unsplashed}?bag`,
+  `${unsplashed}?family`,
+  `${unsplashed}?shops`,
+  `${unsplashed}?forrest`,
+  `${unsplashed}?city`,
+  `${unsplashed}?bus`,
+  `${unsplashed}?clock`,
+  `${unsplashed}?train`,
+  `${unsplashed}?bottle`
 ];
 
 export default photos;

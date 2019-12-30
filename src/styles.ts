@@ -31,7 +31,7 @@ const Content = styled.div<ContentProps>`
 
 const ContentWrapper = styled.div`
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
   border: 5px solid #ffffff;
   border-radius: 10px;

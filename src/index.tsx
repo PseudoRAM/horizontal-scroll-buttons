@@ -26,8 +26,8 @@ function App() {
     <Styled.Container>
       <Styled.Title>Horizontal Scroll Buttons</Styled.Title>
       <Styled.ContentWrapper ref={contentWrapper}>
-        {photos.map(url => (
-          <Styled.Content url={url} />
+        {photos.map((url, i) => (
+          <Styled.Content url={url} key={`img-${i}`} />
         ))}
       </Styled.ContentWrapper>
 
