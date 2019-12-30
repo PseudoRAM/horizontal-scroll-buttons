@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
   width: calc(100% - 64px);
   margin: -8px;
   padding: 10px 40px;
@@ -37,7 +37,7 @@ const ContentWrapper = styled.div`
   border-radius: 10px;
 
   & > ${Content} {
-    margin: 5px 10px;
+    margin: 10px 10px;
   }
 `;
 
