@@ -1,14 +1,53 @@
 import * as React from "react";
 import { render } from "react-dom";
+import photos from "./photos";
+import Styled from "./styles";
 
-import "./styles.css";
+const sideScroll = (
+  element: HTMLDivElement,
+  speed: number,
+  distance: number,
+  step: number
+) => {
+  let scrollAmount = 0;
+  const slideTimer = setInterval(() => {
+    element.scrollLeft += step;
+    scrollAmount += Math.abs(step);
+    if (scrollAmount >= distance) {
+      clearInterval(slideTimer);
+    }
+  }, speed);
+};
 
 function App() {
+  const contentWrapper = React.useRef(null);
+
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Styled.Container>
+      <Styled.Title>Horizontal Scroll Buttons</Styled.Title>
+      <Styled.ContentWrapper ref={contentWrapper}>
+        {photos.map(url => (
+          <Styled.Content url={url} />
+        ))}
+      </Styled.ContentWrapper>
+
+      <Styled.ButtonWrapper>
+        <Styled.Button
+          onClick={() => {
+            sideScroll(contentWrapper.current, 25, 100, -10);
+          }}
+        >
+          Left
+        </Styled.Button>
+        <Styled.Button
+          onClick={() => {
+            sideScroll(contentWrapper.current, 25, 100, 10);
+          }}
+        >
+          Right
+        </Styled.Button>
+      </Styled.ButtonWrapper>
+    </Styled.Container>
   );
 }
 
