@@ -1,10 +1,12 @@
 {
-  "name": "horizontal-scroll-buttons",
+  "name": "horizontal-scroll-using-left-right-buttons",
   "version": "1.0.0",
   "description": "React.js (TS) - Left + Right horizontal scrolling buttons",
   "keywords": [
     "typescript",
     "scroll",
+    "horizontal scroll",
+    "smooth",
     "react"
   ],
   "main": "src/index.tsx",
